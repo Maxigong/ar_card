@@ -13,10 +13,13 @@ tl.from(".card-header", { opacity: 0, yPercent: -10 })
     .pause();
 
 document.addEventListener("DOMContentLoaded", () => {
+    console.log(window.MINDAR.IMAGE.MindARThree);
     const start = async () => {
         const mindarThree = new window.MINDAR.IMAGE.MindARThree({
             container: document.body,
-            imageTargetSrc: "./targetsTwo.mind",
+            // imageTargetSrc:
+            //     "https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.0/examples/image-tracking/assets/card-example/card.mind",
+            imageTargetSrc: "./target.mind",
         });
 
         const { renderer, camera, cssScene, cssRenderer } = mindarThree;
